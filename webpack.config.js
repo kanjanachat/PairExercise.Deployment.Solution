@@ -1,6 +1,7 @@
 const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
+  mode: isDev,
   entry: [
     '@babel/polyfill', // enables async-await
     './client/index.js'
@@ -14,7 +15,7 @@ module.exports = {
   },
   devtool: 'source-map',
   module: {
-    rules: [
+    rules: 
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
