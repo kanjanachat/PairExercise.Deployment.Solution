@@ -7,3 +7,4 @@ export default (props) => (
     <td className="user--email">{props.email}</td>
   </tr>
 )
+ 
